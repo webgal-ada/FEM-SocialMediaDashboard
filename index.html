@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500:600;800&display=swap" rel="stylesheet"> 
+ <style>
+   .root{
+    -- COLORS - White (BG): hsl(0, 0%, 100%)
+    -- VeryPaleBlue: (Top BG Pattern) hsl(225, 100%, 98%)
+    -- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+    -- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+    -- Very Dark Blue (Text): hsl(230, 17%, 14%)
+   }
+  /********👍 font-family: 'Inter', sans-serif;***********/
+ 
+    html {
+      box-sizing:border-box;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      
+    }
+    body {
+      margin: 0 auto;
+      background-color:hsl(0, 0%, 100%);
+      width: 90vw;
+    }
+    header {
+      background-color:var(--Very Dark Blue);
+      height:121px;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-top: 35px;
+      margin-bottom: 5px;
+    }
+    .social-subtitle {
+      color: hsl(228, 12%, 44%);
+      font-size: .95em;
+      font-weight: 500;
+      margin: 5px 0 18px;
+    }
+    input[type="button"] {
+      float: right;
+      width:50px;
+      height: 24px;
+      border-radius: 6px;
+      background-color: #BADA55;
+      margin-top: 15px;
+    }
+    .toggle{
+      color:white;
+      border-top: 2px solid #aaa;
+      
+    } 
+    h3 {
+      color: hsl(228, 12%, 44%);  
+      font-size: .75em;
+      margin-top: 17px;
+    }
+    .card__s {
+      display: flex;
+      flex-direction: column;
+      padding-top: 23px;
+      /* height: 100vh; */
+    }
+    .card-info {
+      height:151px;
+      background-color:hsl(227, 47%, 96%);
+      border-radius: 7px;
+      border-top: 4px solid blue;
+      width:100%;
+      margin-bottom:13px;
+      padding-top: 18px;
+    }
+    .card-contributor {
+      display: flex;
+      justify-content: center;
+    }
+    #icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+}
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.5em;
+    }
+
+    .today{
+      margin-top: 30px;
+      margin-bottom: 22px;
+    }
+    .lg-numbers{
+      font-size: 52px;
+      font-weight: 600;
+      padding-bottom: 2px;  
+    }
+    .col-thin-type {
+      letter-spacing: .10em;
+      text-transform:uppercase;
+      font-size: 0.9em;
+      margin-top: -20px;
+      
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Social Media Dashboard</h1>
+  <div class="social-subtitle">Total Followers: 23,005</div>
+
+  <div class="toggle">
+    <input type="button" id="toggle-id" name="myToggle">
+  <div class="toggle-switch"><h3>Dark Mode<h3>
+</div>
+</div>
+ </header> 
+
+ <div class="card__s">
+        <div class="card-info">
+            <div class="card-contributor">
+              <img src="icon-facebook.svg" id="icon">@nathanf</div>
+                <span class="lg-numbers">1987</span>
+                <span class="col-thin-type">Followers</span>
+                <span class="today">12 Today</span>
+        </div>
+  
+  <div class="card-info">
+        <div class="card-contributor">
+              <img src="icon-twitter.svg" id="icon">@nathanf</div>
+        <span class="lg-numbers">1044</span>
+        <span class="col-thin-type">Followers</span>
+        <span class="today">99 Today</span>
+  </div>
+ <div class="card-info">
+<div class="card-contributor">
+              <img src="icon-instagram.svg" id="icon">@realnathanf</div>
+          <span class="lg-numbers">11k</span>
+          <span class="col-thin-type">Followers</span>
+          <span class="today">1099 Today</span>
+    </div>
+<div class="card-info">
+ <div class="card-contributor">
+              <img src="icon-up.svg" id="icon">Nathan F.</div>
+          <span class="lg-numbers">8239</span>
+          <span class="col-thin=-type">Subscribers</span>
+          <span>144 Today</span>
+</div>
+</div>
+<!--  Overview - Today
+
+  Page Views
+  87
+  3%
+
+  Likes
+  52
+  2%
+
+  Likes
+  5462
+  2257%
+
+  Profile Views
+  52k
+  1375%
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12% --> 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
